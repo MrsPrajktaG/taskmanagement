@@ -1,0 +1,110 @@
+<div class="container mt-5">
+    <h1 style="color: rgb(0, 0, 159);"><i class="fa fa-text-height fa-sm" aria-hidden="true"></i> Edit Admins Groups</h1>
+    <hr style="background-color: rgb(0, 0, 159); height: 2px">
+    <form>
+        <div class="card-header">
+            <h1 class="card-title" style="color: blue; font-size: 30px;"></h1>
+          
+            <div class="card-tools">
+          
+              <button type="button" class="btn btn-primary rounded-pill" data-card-widget="remove">
+          
+                <i class="fa fa-share">Back</i>
+          
+              </button>
+            </div>
+          </div>
+        <hr>
+        <label>Name</label>
+      <input class="form-control" ><br/>
+      <label>Description</label>
+      <input class="form-control" ><br/>
+      <hr>
+      <h5>Permission</h5>
+        <div class="table-responsive">
+            <table class="table">
+                <thead class="thead-light">
+                    <tr style="text-align: center;">
+                        <th scope="col">Modules</th>
+                        <th scope="col">Show</th>
+                        <th scope="col">Create</th>
+                        <th scope="col">Edit</th>
+                        <th scope="col">Delete</th>
+                    </tr>
+                </thead>
+                <tbody style="text-align: center;">
+                    <tr>
+                        <td style="color: green;">Admin Groups</td>
+                        <td><input type="checkbox" (click)="admingroupstatus($event)" value="admingroup" class="checkbox"> Show</td>
+                        <td><input type="checkbox" (click)="admingroupstatus($event)" value="admingroup" class="checkbox"> Create</td>
+                        <td><input type="checkbox" (click)="admingroupstatus($event)" value="admingroup" class="checkbox"> Edit</td>
+                        <td><input type="checkbox" (click)="admingroupstatus($event)" value="admingroup" class="checkbox"> Delete</td>
+                    </tr>
+                    <tr>
+                        <td style="color: green;">Admin</td>
+                        <td><input type="checkbox" (click)="adminstatus($event)" value="admin" class="checkbox"> Show</td>
+                        <td><input type="checkbox" (click)="adminstatus($event)" value="admin" class="checkbox"> Create</td>
+                        <td><input type="checkbox" (click)="adminstatus($event)" value="admin" class="checkbox"> Edit</td>
+                        <td><input type="checkbox" (click)="adminstatus($event)" value="admin" class="checkbox"> Delete</td>
+                    </tr>
+                    <tr>
+                        <td style="color: green;">Designations</td>
+                        <td><input type="checkbox" (click)="designationstatus($event)"  value="designation" class="checkbox"> Show</td>
+                        <td><input type="checkbox" (click)="designationstatus($event)"  value="designation" class="checkbox"> Create</td>
+                        <td><input type="checkbox" (click)="designationstatus($event)"  value="designation" class="checkbox"> Edit</td>
+                        <td><input type="checkbox" (click)="designationstatus($event)"  value="designation" class="checkbox"> Delete</td>
+                    </tr>
+                    <tr>
+                        <td style="color: green;">Members</td>
+                        <td><input type="checkbox" (click)="memberstatus($event)" value="member" class="checkbox"> Show</td>
+                        <td><input type="checkbox" (click)="memberstatus($event)" value="member" class="checkbox"> Create</td>
+                        <td><input type="checkbox" (click)="memberstatus($event)" value="member" class="checkbox"> Edit</td>
+                        <td><input type="checkbox" (click)="memberstatus($event)" value="member" class="checkbox"> Delete</td>
+                    </tr>
+                    <tr>
+                        <td style="color: green;">Categories</td>
+                        <td><input type="checkbox" (click)="categoriesstatus($event)" value="categories" class="checkbox"> Show</td>
+                        <td><input type="checkbox" (click)="categoriesstatus($event)" value="categories" class="checkbox"> Create</td>
+                        <td><input type="checkbox" (click)="categoriesstatus($event)" value="categories" class="checkbox"> Edit</td>
+                        <td><input type="checkbox" (click)="categoriesstatus($event)" value="categories" class="checkbox"> Delete</td>
+                    </tr>
+                    <tr>
+                        <td style="color: green;">Project</td>
+                        <td><input type="checkbox" (click)="projectstatus($event)" value="project" class="checkbox"> Show</td>
+                        <td><input type="checkbox" (click)="projectstatus($event)" value="project" class="checkbox"> Create</td>
+                        <td><input type="checkbox" (click)="projectstatus($event)" value="project" class="checkbox"> Edit</td>
+                        <td><input type="checkbox" (click)="projectstatus($event)" value="project" class="checkbox"> Delete</td>
+                    </tr>
+                    <tr>
+                        <td style="color: green;">Task</td>
+                        <td><input type="checkbox" (click)="taskstatus($event)" value="task" class="checkbox"> Show</td>
+                        <td><input type="checkbox" (click)="taskstatus($event)" value="task" class="checkbox"> Create</td>
+                        <td><input type="checkbox" (click)="taskstatus($event)" value="task" class="checkbox"> Edit</td>
+                        <td><input type="checkbox" (click)="taskstatus($event)" value="task" class="checkbox"> Delete</td>
+                    </tr>
+                    <tr>
+                        <td style="color: green;">Productivities</td>
+                        <td><input type="checkbox" (click)="productivitiesstatus($event)" value="productivities" class="checkbox"> Show</td>
+                        <td><input type="checkbox" (click)="productivitiesstatus($event)" value="productivities" class="checkbox"> Create</td>
+                        <td><input type="checkbox" (click)="productivitiesstatus($event)" value="productivities" class="checkbox"> Edit</td>
+                        <td><input type="checkbox" (click)="productivitiesstatus($event)" value="productivities" class="checkbox"> Delete</td>
+                    </tr>
+                    <tr>
+                        <td style="color: green;">Reports</td>
+                        <td><input type="checkbox" (click)="reportstatus($event)" value="report" class="checkbox"> Show</td>
+                        <td><input type="checkbox" (click)="reportstatus($event)" value="report" class="checkbox"> Create</td>
+                        <td><input type="checkbox" (click)="reportstatus($event)" value="report" class="checkbox"> Edit</td>
+                        <td><input type="checkbox" (click)="reportstatus($event)" value="report" class="checkbox"> Delete</td>
+                    </tr>
+                    <tr>
+                        <td style="color: green;">Settings</td>
+                        <td><input type="checkbox" (click)="settingsstatus($event)" value="settings" class="checkbox"> Show</td>
+                        <td><input type="checkbox" (click)="settingsstatus($event)" value="settings" class="checkbox"> Create</td>
+                        <td><input type="checkbox" (click)="settingsstatus($event)" value="settings" class="checkbox"> Edit</td>
+                        <td><input type="checkbox" (click)="settingsstatus($event)" value="settings" class="checkbox"> Delete</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+  </div>
